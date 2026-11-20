@@ -1,0 +1,14 @@
+# Runtime dependencies for the API and the Streamlit app (versions the artefacts were trained and tested with)
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+imbalanced-learn==0.14.2
+joblib==1.6.0
+plotly==5.24.1
+streamlit==1.67.0
+fastapi==0.162.2
+uvicorn==0.54.0
+pydantic==2.14.3
+requests==2.34.2

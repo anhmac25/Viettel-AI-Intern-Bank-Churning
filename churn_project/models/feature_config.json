@@ -1,0 +1,67 @@
+{
+  "numeric": [
+    "credit_score",
+    "age",
+    "tenure",
+    "balance",
+    "products_number",
+    "credit_card",
+    "active_member",
+    "estimated_salary",
+    "txn_amount_6m",
+    "avg_ticket",
+    "recency_days",
+    "txn_slope",
+    "amount_ratio_recent",
+    "login_count_30d",
+    "days_since_last_login",
+    "login_missing_flag",
+    "mobile_share",
+    "branch_share",
+    "atm_share",
+    "complaints_6m",
+    "balance_to_salary",
+    "products_per_tenure",
+    "R_score",
+    "M_score",
+    "rfm_score"
+  ],
+  "categorical": [
+    "country",
+    "gender",
+    "preferred_channel"
+  ],
+  "dropped_correlated": [
+    {
+      "dropped": "zero_balance_flag",
+      "kept": "balance",
+      "abs_corr": 0.922
+    },
+    {
+      "dropped": "complaint_flag",
+      "kept": "complaints_6m",
+      "abs_corr": 0.903
+    },
+    {
+      "dropped": "txn_ratio_recent",
+      "kept": "txn_slope",
+      "abs_corr": 0.89
+    },
+    {
+      "dropped": "txn_freq_6m",
+      "kept": "F_score",
+      "abs_corr": 0.888
+    },
+    {
+      "dropped": "F_score",
+      "kept": "rfm_score",
+      "abs_corr": 0.867
+    }
+  ],
+  "imbalance_choice": {
+    "logreg": "none",
+    "rf": "none",
+    "xgb": "none"
+  },
+  "pos_weight": 3.9079754601226995
+}

@@ -1,0 +1,7 @@
+month,scenario,n,missing_rate,auc,recall,precision,churn_rate,mean_prediction,share_flagged,input_drift,prediction_drift,performance,data_quality,perf_breach,prediction_shift_rel,share_features_alert,max_psi_top,action
+Month 1,Stable,600,0.01,0.9175,0.9274,0.4122,0.2067,0.2093,0.465,OK,OK,OK,OK,False,0.028162540466196345,0.0,0.016134470404736624,No action
+Month 2,Mild shift,600,0.0167,0.9372,0.9464,0.4061,0.1867,0.1966,0.435,OK,OK,OK,OK,False,0.03432446848686726,0.0,0.032116787507301375,No action
+Month 3,App outage / activity drop,600,0.0,0.8872,0.9781,0.3213,0.2283,0.3607,0.695,ALERT,WARNING,OK,OK,False,0.771600268632894,0.29411764705882354,1.0354027923577194,Schedule retraining and investigate the data source
+Month 4,Competitor offer (concept drift),600,0.0133,0.7442,0.677,0.5543,0.3767,0.2143,0.46,OK,OK,WARNING,OK,True,0.05264096639922431,0.0,0.02295172242401434,"Investigate (data change, segment mix, labels)"
+Month 5,Login tracking failure,600,0.085,0.9049,0.9137,0.4441,0.2317,0.2185,0.4767,OK,OK,OK,BLOCK,False,0.07303639776638891,0.0,0.033338894206228604,Block scoring of this batch and alert the data owner
+Month 6,Competitor offer continues,600,0.015,0.7367,0.6511,0.5484,0.3917,0.2098,0.465,OK,OK,ALERT,OK,True,0.030435571140583182,0.0,0.02394227814664819,RETRAIN and revalidate before replacing the model

@@ -1,0 +1,122 @@
+{
+  "Branch-Oriented Seniors": {
+    "cluster": 0,
+    "description": "higher age; lower mobile-app usage, app logins, transaction frequency",
+    "share_of_customers": 0.1781,
+    "churn_rate_train": 0.42422096317280455,
+    "churn_rate_test": 0.4444444444444444,
+    "churn_rate_all": 0.42841100505334084,
+    "profile": {
+      "recency_days": 2.1458923512747874,
+      "txn_freq_6m": 77.00779036827196,
+      "txn_amount_6m": 7432.85363512748,
+      "login_count_30d": 6.810198300283286,
+      "mobile_share": 0.2509300283286119,
+      "balance": 93571.10707507082,
+      "products_number": 1.408640226628895,
+      "txn_ratio_recent": 0.9121221273173536,
+      "age": 54.08781869688385
+    },
+    "actions": {
+      "low": "No contact. Offer help to use digital services at the next branch visit.",
+      "medium": "Friendly call or letter from the branch; guided digital onboarding.",
+      "high": "Personal call from the branch relationship manager within one week; priority service line and fee review."
+    }
+  },
+  "High-Balance Savers": {
+    "cluster": 1,
+    "description": "higher balance; lower number of products, age, transaction frequency",
+    "share_of_customers": 0.334,
+    "churn_rate_train": 0.17335834896810506,
+    "churn_rate_test": 0.14962962962962964,
+    "churn_rate_all": 0.16856287425149702,
+    "profile": {
+      "recency_days": 2.002626641651032,
+      "txn_freq_6m": 77.25478424015009,
+      "txn_amount_6m": 7546.711984390244,
+      "login_count_30d": 10.153095684803002,
+      "mobile_share": 0.5860234896810507,
+      "balance": 119577.87810506565,
+      "products_number": 1.250656660412758,
+      "txn_ratio_recent": 0.9967201962589792,
+      "age": 35.22101313320825
+    },
+    "actions": {
+      "low": "No contact. Annual relationship review.",
+      "medium": "Relationship-manager check-in; competitive savings or investment offer.",
+      "high": "Priority call by a senior relationship manager; bespoke retention offer protecting the balance."
+    }
+  },
+  "Digital Power Users": {
+    "cluster": 2,
+    "description": "higher transaction frequency, spending, app logins; lower age, days since last transaction",
+    "share_of_customers": 0.1965,
+    "churn_rate_train": 0.0726010101010101,
+    "churn_rate_test": 0.05774278215223097,
+    "churn_rate_all": 0.06972010178117048,
+    "profile": {
+      "recency_days": 0.7563131313131313,
+      "txn_freq_6m": 159.9911616161616,
+      "txn_amount_6m": 17933.501242929302,
+      "login_count_30d": 22.902146464646464,
+      "mobile_share": 0.6004916035353536,
+      "balance": 79090.50051767676,
+      "products_number": 1.6893939393939394,
+      "txn_ratio_recent": 0.9913815970346095,
+      "age": 33.87752525252525
+    },
+    "actions": {
+      "low": "No contact. Keep monitoring; cross-sell through in-app offers.",
+      "medium": "In-app nudge or cashback on their favourite spending category; avoid costly discounts.",
+      "high": "Alert the digital-engagement team: personalised in-app offer and a short survey about what changed."
+    }
+  },
+  "Everyday Low-Balance Users": {
+    "cluster": 3,
+    "description": "higher number of products; lower balance",
+    "share_of_customers": 0.2555,
+    "churn_rate_train": 0.13720703125,
+    "churn_rate_test": 0.15779092702169625,
+    "churn_rate_all": 0.14129158512720155,
+    "profile": {
+      "recency_days": 1.81494140625,
+      "txn_freq_6m": 84.05908203125,
+      "txn_amount_6m": 6758.467389453125,
+      "login_count_30d": 10.09375,
+      "mobile_share": 0.5543974609375,
+      "balance": 3878.2606884765623,
+      "products_number": 1.873046875,
+      "txn_ratio_recent": 0.9926902574629748,
+      "age": 36.736328125
+    },
+    "actions": {
+      "low": "No contact; promote savings goals in the app.",
+      "medium": "Low-cost automated offer: fee waiver or salary-deposit bonus.",
+      "high": "Review products and fees (many products, low balance); proactive complaint resolution; simplify the product bundle."
+    }
+  },
+  "Dormant & Fading": {
+    "cluster": 4,
+    "description": "higher days since last transaction, age; lower recent activity trend, transaction frequency, spending",
+    "share_of_customers": 0.0359,
+    "churn_rate_train": 0.5945017182130584,
+    "churn_rate_test": 0.5882352941176471,
+    "churn_rate_all": 0.5933147632311978,
+    "profile": {
+      "recency_days": 18.52920962199313,
+      "txn_freq_6m": 46.4639175257732,
+      "txn_amount_6m": 4325.757180756014,
+      "login_count_30d": 5.841924398625429,
+      "mobile_share": 0.4883865979381443,
+      "balance": 92887.21972508592,
+      "products_number": 1.3814432989690721,
+      "txn_ratio_recent": 0.7202922603826288,
+      "age": 42.74570446735395
+    },
+    "actions": {
+      "low": "Light-touch reactivation email.",
+      "medium": "Reactivation campaign with a simple first action (e.g. set up a direct debit) and a small incentive.",
+      "high": "Immediate outbound contact: understand the reason, resolve open complaints, offer a targeted win-back incentive."
+    }
+  }
+}

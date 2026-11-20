@@ -1,0 +1,28 @@
+# Render Blueprint: two free web services from the same repository.
+services:
+  - type: web
+    name: churn-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: LOG_PREDICTIONS
+        value: "0"
+  - type: web
+    name: churn-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: LOG_PREDICTIONS
+        value: "0"
+      # Optional: score through the API instead of in-process, e.g. https://churn-api.onrender.com
+      # - key: API_URL
+      #   value: https://churn-api.onrender.com

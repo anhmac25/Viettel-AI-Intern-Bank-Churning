@@ -1,0 +1,11 @@
+{
+  "amount_cap": 8478.03480000005,
+  "login_median_by_active": {
+    "0": 6.0,
+    "1": 14.0
+  },
+  "days_login_median_by_active": {
+    "0": 3.0,
+    "1": 1.0
+  }
+}

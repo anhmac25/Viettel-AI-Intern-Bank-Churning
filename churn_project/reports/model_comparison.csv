@@ -1,0 +1,4 @@
+model,cv_roc_auc,test_roc_auc,test_pr_auc,test_brier,test_precision,test_recall,test_f1
+logreg,0.8687,0.8727,0.6963,0.1026,0.7108,0.5012,0.5879
+rf,0.9042,0.9121,0.7985,0.0868,0.831,0.5799,0.6831
+xgb,0.92,0.9258,0.8193,0.0763,0.7988,0.6732,0.7307

@@ -1,0 +1,8 @@
+# Extra packages needed only to RE-RUN the training / EDA / monitoring pipeline and the tests
+-r requirements.txt
+matplotlib==3.11.2
+seaborn==0.13.2
+evidently==0.7.23
+tabulate==0.10.0
+pytest==9.2.0
+httpx==0.28.1
